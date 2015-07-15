@@ -1,0 +1,37 @@
+[core]
+	excludesfile = /Users/brian/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/bcomp -ro $LOCAL $REMOTE
+	path = 
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/bcomp $LOCAL $REMOTE $BASE $MERGED
+	trustExitCode = true
+[user]
+	name = Brian Delahunty
+	email = brian@barn2door.com
+[push]
+	default = nothing
+[color]
+	diff = auto
+	ui = true
+[color "diff"]
+	whitespace = red reverse
+[alias]
+	co = checkout
+	st = status
+	unstage = reset HEAD --
+[diff]
+	renames = copies
+	tool = bc3
+[merge]
+	stat = true
+	tool = bc3
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	lg = log -p
+[mergetool]
+	bc3 = trustExitCode
