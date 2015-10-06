@@ -1,0 +1,19 @@
+# path aliases
+alias ..='cd ..'
+
+# apps
+alias st='open -a SourceTree '
+alias vssh_debug="vagrant ssh -- -L 5858:127.0.0.1:5858"
+
+# node
+alias ni="node-inspector --preload false"
+alias npmls='npm ls --depth=0'
+
+# git
+alias g='git'
+alias gs='git status'
+alias gp='git pull '
+alias co="git co"
+alias cob="git co -b"
+alias upmaster="git fetch origin master:master"
+alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."

@@ -1,0 +1,10 @@
+[color]
+    ui = true
+    diff = auto
+[color "diff"]
+    whitespace = red reverse
+[color "status"]
+    added = green
+    changed = magenta
+    deleted = red
+    untracked = cyan

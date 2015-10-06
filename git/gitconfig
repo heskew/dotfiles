@@ -1,0 +1,14 @@
+[core]
+	excludesfile = /Users/brian/.dotfiles/git/gitignore
+[include]
+    path = ~/.dotfiles/git/configs/alias.gitconfig
+    path = ~/.dotfiles/git/configs/colour.gitconfig
+    path = ~/.dotfiles/git/configs/user.gitconfig
+[push]
+    default = nothing
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

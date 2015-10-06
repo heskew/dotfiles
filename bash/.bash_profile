@@ -8,11 +8,11 @@ if [ -f ~/.profile ]; then
   source ~/.profile
 fi
 
-if [ -f ~/.bash_aliases ]; then
-  source ~/.bash_aliases
+if [ -f ~/.aliases ]; then
+  source ~/.aliases
 fi
 
-if [ -f ~/.git-completion.bash ]; then
+if [ -f ~/.git-completion.bashrch ]; then
   # Autocomplete for 'g' as well
   complete -o default -o nospace -F _git g
   . ~/.git-completion.bash
