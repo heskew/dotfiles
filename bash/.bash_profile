@@ -32,8 +32,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 export PATH="/opt/local/bin:/opt/local/sbin:$HOME/bin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-eval "$(gulp --completion=bash)"
-
 # Setup Powerline
 #. /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
 

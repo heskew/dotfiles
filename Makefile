@@ -14,8 +14,8 @@ help:
 	@echo "    dotfiles  Install fonts, dotfiles, zsh (prezto) as default shell etc."
 	@echo
 
-dotfiles: ensure-location update-submodules install-configs install-fonts install-prezto
-	@echo "Remember to slso configure iterm2 to use powerline fonts"
+dotfiles: ensure-location update-submodules install-configs install-fonts install-prezto default-zsh
+	@echo "Remember to also configure iterm2 to use powerline fonts"
 	@echo
 
 brews: 
@@ -53,6 +53,9 @@ install-prezto: update-submodules
 	ln -sfn $(shell pwd)/zsh/zpreztorc $(HOME)/.zpreztorc
 	ln -sfn $(shell pwd)/zsh/zshrc $(HOME)/.zshrc
 	ln -sfn $(shell pwd)/zsh/prezto $(HOME)/.zprezto
+
+default-zsh:
+	chsh -s /bin/zsh
 
 update-submodules:
 	git submodule update --init --recursive
