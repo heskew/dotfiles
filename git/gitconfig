@@ -1,15 +1,23 @@
 [core]
-    excludesfile = /Users/brian/.dotfiles/git/gitignore
+	excludesfile = ~/.dotfiles/git/gitignore
     editor = /usr/bin/vim
 [include]
-    path = ~/.dotfiles/git/configs/alias.gitconfig
-    path = ~/.dotfiles/git/configs/colour.gitconfig
-    path = ~/.dotfiles/git/configs/user.gitconfig
+	path = ~/.dotfiles/git/configs/alias.gitconfig
+	path = ~/.dotfiles/git/configs/colour.gitconfig
+	path = ~/.dotfiles/git/configs/user.gitconfig
 [push]
-    default = nothing
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
-[mergetool "sourcetree"]
-    cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.3/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	default = nothing
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
     trustExitCode = true
+	tool = Kaleidoscope
