@@ -7,4 +7,4 @@
     added = green
     changed = magenta
     deleted = red
-    untracked = cyan
+    untracked = red

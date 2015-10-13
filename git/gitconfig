@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/brian/.dotfiles/git/gitignore
+	editor = /usr/bin/vims
 [include]
     path = ~/.dotfiles/git/configs/alias.gitconfig
     path = ~/.dotfiles/git/configs/colour.gitconfig

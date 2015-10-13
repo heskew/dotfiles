@@ -40,6 +40,7 @@ brew cask install skype
 brew cask install flux
 brew cask install spectacle
 brew cask install adobe-reader
+brew cask install cyberduck
 
 # Clean things up
 brew linkapps

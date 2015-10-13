@@ -19,5 +19,7 @@ alias upmaster="git fetch origin master:master"
 alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."
 
 # locations
+alias code='cd ~/code'
 alias out='cd ~/outhouse'
 alias dots='cd ~/.dotfiles'
+alias sites='cd ~/sites'
