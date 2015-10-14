@@ -20,11 +20,11 @@ brew tap caskroom/versions
 brew install brew-cask
 
 # Brews
-brew install zsh
 brew install go
 brew install node
 brew install ssh-copy-id
 brew install wget
+brew install zsh
 
 # Casks
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -32,18 +32,18 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Casks: Dev
 brew cask install dockertoolbox
 brew cask install heroku-toolbelt
-brew cask install sublime-text3
 brew cask install iterm2
 brew cask install kaleidoscope
+brew cask install sublime-text3
 brew cask install vagrant
 
 # Casks: tools/misc
 brew cask install adobe-reader
+brew cask install caffeine
 brew cask install cyberduck
 brew cask install flux
 brew cask install skype
 brew cask install spectacle
-brew cask install caffeine
 
 # Clean things up
 brew linkapps
