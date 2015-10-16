@@ -30,6 +30,7 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'git' \
+  'node' \
   'spectrum' \
   'utility' \
   'completion' \
