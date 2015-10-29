@@ -37,7 +37,7 @@ brew cask install heroku-toolbelt
 brew cask install iterm2
 brew cask install kaleidoscope
 brew cask install sublime-text3
-brew cask install vagrant
+brew cask install otto
 brew cask install java
 brew cask install android-studio
 
