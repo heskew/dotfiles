@@ -30,6 +30,8 @@ brew install zsh
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Casks: Dev
+brew cask install virtualbox
+brew cask install virtualbox-extension-pack
 brew cask install dockertoolbox
 brew cask install heroku-toolbelt
 brew cask install iterm2
