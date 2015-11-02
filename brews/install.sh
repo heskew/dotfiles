@@ -22,6 +22,7 @@ brew install brew-cask
 # Brews
 brew install go
 brew install node
+brew install nvm
 brew install ssh-copy-id
 brew install wget
 brew install zsh

@@ -35,4 +35,7 @@ if [ "$TERM" != "linux" ]; then
     install_powerline_precmd
 fi
 
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 export PATH="/usr/local/heroku/bin:~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:~/bin:/usr/local/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
