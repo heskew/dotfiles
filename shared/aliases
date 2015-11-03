@@ -3,6 +3,7 @@ alias ..='cd ..'
 
 # apps
 alias st='open -a SourceTree '
+alias md='open -a "Marked 2" '
 alias vssh_debug="vagrant ssh -- -L 5858:127.0.0.1:5858"
 
 # node
