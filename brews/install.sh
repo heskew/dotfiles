@@ -15,32 +15,36 @@ brew upgrade --all
 brew tap homebrew/dupes
 
 # Install Cask
+brew install brew-cask
 brew tap caskroom/cask
 brew tap caskroom/versions
-brew install brew-cask
 
 # Brews
-brew install wget
-brew install postgresql
 brew install go
 brew install node
+brew install postgresql
 brew install ssh-copy-id
+brew install wget
 
 # Casks
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Casks: Dev
-brew cask install vagrant
-brew cask install sourcetree
 brew cask install heroku-toolbelt
+brew cask install sourcetree
 brew cask install sublime-text3
-	
+brew cask install vagrant
+brew cask install dockertoolbox
+
 # Casks: tools/misc
-brew cask install skype
-brew cask install flux
-brew cask install spectacle
 brew cask install adobe-reader
+brew cask install atom
 brew cask install cyberduck
+brew cask install flux
+brew cask install google-drive
+brew cask install macdown
+brew cask install skype
+brew cask install spectacle
 
 # Clean things up
 brew linkapps
