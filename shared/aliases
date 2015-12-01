@@ -20,6 +20,7 @@ alias clean="git checkout master && git branch --merged | grep -v master | xargs
 alias cleancheck="git checkout master && git branch --merged | grep -v master"
 alias upmaster="git fetch origin master:master"
 alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."
+alias upall="bash ~/.dotfiles/git/update_all.sh"
 
 # locations
 alias src='cd ~/src'
