@@ -16,12 +16,20 @@ alias gs='git status'
 alias gp='git pull '
 alias co="git co"
 alias cob="git co -b"
+alias clean="git checkout master && git branch --merged | grep -v master | xargs git branch -d"
+alias cleancheck="git checkout master && git branch --merged | grep -v master"
 alias upmaster="git fetch origin master:master"
 alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."
 
 # locations
-alias code='cd ~/code'
+alias src='cd ~/src'
 alias out='cd ~/outhouse'
 alias dots='cd ~/.dotfiles'
 alias sites='cd ~/sites'
 alias nf='cd ~/nearform'
+
+# docker
+# from https://gist.github.com/eoinsha/717557fd819d96365d52
+alias dm-env="source ~/.docker-machine.dev.env"
+alias dm-stop="docker-machine stop dev"
+alias dm-start="docker-machine start dev && docker-machine env dev > ~/.docker-machine.dev.env && dm-env"
