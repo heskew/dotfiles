@@ -34,3 +34,11 @@ alias nf='cd ~/nearform'
 alias dm-env="source ~/.docker-machine.dev.env"
 alias dm-stop="docker-machine stop dev"
 alias dm-start="docker-machine start dev && docker-machine env dev > ~/.docker-machine.dev.env && dm-env"
+
+# mysql
+alias runmysql='mysql.server start'
+alias stopmysql='mysql.server stop'
+
+# redis
+alias runredis='redis-server /usr/local/etc/redis.conf &'
+alias stopredis='redis-cli shutdown'
