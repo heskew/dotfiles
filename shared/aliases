@@ -30,6 +30,7 @@ alias sites='cd ~/sites'
 alias nf='cd ~/nearform'
 
 # docker
+alias dm-list='docker-machine ls'
 dm-env() {
     eval "$(docker-machine env "$1")"
 }
