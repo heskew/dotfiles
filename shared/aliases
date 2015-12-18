@@ -30,10 +30,15 @@ alias sites='cd ~/sites'
 alias nf='cd ~/nearform'
 
 # docker
-# from https://gist.github.com/eoinsha/717557fd819d96365d52
-alias dm-env="source ~/.docker-machine.dev.env"
-alias dm-stop="docker-machine stop dev"
-alias dm-start="docker-machine start dev && docker-machine env dev > ~/.docker-machine.dev.env && dm-env"
+dm-env() {
+    eval "$(docker-machine env "$1")"
+}
+dm-stop() {
+    docker-machine stop $1
+}
+dm-start() {
+    docker-machine start $1 && dm-env $1
+}
 
 # mysql
 alias runmysql='mysql.server start'
