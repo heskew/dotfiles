@@ -21,11 +21,13 @@ brew install brew-cask
 
 # Brews
 brew install go
-brew install node
-brew install nvm
+# brew install nvm
+# git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+# 
 brew install ssh-copy-id
 brew install wget
 brew install zsh
+brew install unar
 
 # Casks
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -34,8 +36,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install dockertoolbox
-brew cask install heroku-toolbelt
-brew cask install iterm2
+brew cask install iterm2-beta
 brew cask install kaleidoscope
 brew cask install sublime-text3
 brew cask install otto
