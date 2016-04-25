@@ -29,6 +29,9 @@ brew install wget
 brew install zsh
 brew install unar
 
+brew install ruby
+gem update --system
+
 # Casks
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
@@ -49,6 +52,7 @@ brew cask install adobe-reader
 brew cask install caffeine
 brew cask install cyberduck
 brew cask install flux
+brew cask install macdown
 brew cask install skype
 brew cask install spectacle
 
