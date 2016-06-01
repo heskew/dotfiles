@@ -16,7 +16,7 @@ alias gs='git status'
 alias gp='git pull '
 alias co="git co"
 alias cob="git co -b"
-alias clean="git checkout master && git branch --merged | grep -v master | xargs git branch -d"
+alias clean="git checkout master && { git branch --merged | grep -v master | xargs git branch -d } && git remote prune origin"
 alias cleancheck="git checkout master && git branch --merged | grep -v master"
 alias upmaster="git fetch origin master:master"
 alias diffmaster="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative master.."
@@ -27,7 +27,7 @@ alias src='cd ~/src'
 alias out='cd ~/outhouse'
 alias dots='cd ~/.dotfiles'
 alias sites='cd ~/sites'
-alias nf='cd ~/nearform'
+alias dev='cd ~/src/dev'
 
 # docker
 alias dm-list='docker-machine ls'
