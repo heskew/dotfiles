@@ -23,11 +23,12 @@ brew install brew-cask
 brew install go
 # brew install nvm
 # git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
-# 
+#
 brew install ssh-copy-id
 brew install wget
 brew install zsh
 brew install unar
+brew install pv
 
 brew install ruby
 gem update --system
