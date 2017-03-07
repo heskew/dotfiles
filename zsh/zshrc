@@ -39,4 +39,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
-export PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:~/bin:$PATH"
+export PATH="/usr/local/aws/bin:/Users/heskew/gocode/bin:/Users/heskew/kubernetes/platforms/darwin/amd64:/Users/heskew/bin:$PATH"
+export GOPATH=/Users/heskew/gocode
+
+source /usr/local/aws/bin/aws_zsh_completer.sh
+
+source ~/.zsh.k8src
